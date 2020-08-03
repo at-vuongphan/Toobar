@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llNavItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_16dp">
+
+    <ImageView
+        android:id="@+id/icNavItem"
+        android:layout_width="@dimen/nav_item_icon_size"
+        android:layout_height="@dimen/nav_item_icon_size"
+        android:layout_marginLeft="@dimen/margin_4dp"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_inbox" />
+
+    <TextView
+        android:id="@+id/tvNavItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/icNavItem"
+        app:layout_constraintStart_toEndOf="@+id/icNavItem"
+        app:layout_constraintTop_toTopOf="@id/icNavItem"
+        tools:text="Inbox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
